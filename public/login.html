@@ -1,84 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 
-<body class=" bg-gray-400">
-    <!-- Container -->
-    <div class="container mx-auto">
+    <body class=" bg-gray-400">
+        <!-- Container -->
+        <div class="container mx-auto">
 
-        <div class="flex justify-center px-6 my-12">
-            <!-- Row -->
-            <div class="w-full xl:w-3/4 lg:w-11/12 flex">
-                <!-- Col -->
-                <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg"
-                    style="background-image: url('../Images/login-bg.png')"></div>
-                <!-- Col -->
-                <div class="w-full lg:w-6/12 bg-white p-5 rounded-lg lg:rounded-l-none lg:py-32">
-                    <h3 class="pt-4 text-2xl text-center lg:mb-10">Welcome back!</h3>
-                    <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+            <div class="flex justify-center px-6 my-12">
+                <!-- Row -->
+                <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+                    <!-- Col -->
+                    <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-6/12 bg-cover rounded-l-lg"
+                        style="background-image: url('../Images/login-bg.png')"></div>
+                    <!-- Col -->
+                    <div class="w-full lg:w-6/12 bg-white p-5 rounded-lg lg:rounded-l-none lg:py-32">
+                        <h3 class="pt-4 text-2xl text-center lg:mb-10 font-semibold">Welcome back!</h3>
+                        <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
 
-                        <div class="mb-4 relative">
-                            <label class="block mb-2 text-sm font-bold text-gray-700" for="username">
-                                Username
-                            </label>
-                            <!-- User Icon  -->
-                            <svg width="18" height="18" viewBox="0 0 22 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class=" absolute top-10 left-2">
-                                <path
-                                    d="M11 0C9.79134 0 8.60982 0.35841 7.60485 1.02991C6.59988 1.70141 5.81661 2.65583 5.35407 3.77249C4.89153 4.88915 4.77051 6.11789 5.00631 7.30333C5.24211 8.48877 5.82414 9.57767 6.67879 10.4323C7.53345 11.287 8.62234 11.869 9.80778 12.1048C10.9932 12.3406 12.222 12.2196 13.3386 11.757C14.4553 11.2945 15.4097 10.5112 16.0812 9.50626C16.7527 8.5013 17.1111 7.31977 17.1111 6.11111C17.1111 4.49034 16.4673 2.93596 15.3212 1.7899C14.1752 0.643847 12.6208 0 11 0ZM11 9.77778C10.2748 9.77778 9.56589 9.56273 8.96291 9.15983C8.35993 8.75693 7.88996 8.18428 7.61244 7.51428C7.33492 6.84429 7.26231 6.10704 7.40379 5.39578C7.54527 4.68452 7.89448 4.03118 8.40727 3.51839C8.92007 3.00559 9.57341 2.65638 10.2847 2.5149C10.9959 2.37342 11.7332 2.44603 12.4032 2.72355C13.0732 3.00107 13.6458 3.47104 14.0487 4.07402C14.4516 4.677 14.6667 5.38591 14.6667 6.11111C14.6667 7.08357 14.2804 8.0162 13.5927 8.70384C12.9051 9.39147 11.9725 9.77778 11 9.77778ZM22 23.2222V22C22 19.7309 21.0986 17.5548 19.4941 15.9503C17.8897 14.3458 15.7135 13.4444 13.4444 13.4444H8.55556C6.28648 13.4444 4.11034 14.3458 2.50586 15.9503C0.901386 17.5548 0 19.7309 0 22V23.2222H2.44444V22C2.44444 20.3792 3.08829 18.8248 4.23435 17.6788C5.3804 16.5327 6.93479 15.8889 8.55556 15.8889H13.4444C15.0652 15.8889 16.6196 16.5327 17.7657 17.6788C18.9117 18.8248 19.5556 20.3792 19.5556 22V23.2222H22Z"
-                                    fill="#4D4D51" />
-                            </svg>
-                            <input required
-                                class="w-full px-8 py-3 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                id="username" type="text" />
-                        </div>
-                        <div class="mb-4 relative">
-                            <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
-                                Password
-                            </label>
-                            <svg width="20" height="20" viewBox="0 0 22 27" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class=" absolute top-10 left-2">
-                                <path
-                                    d="M10.6667 0C6.99067 0 4 2.99067 4 6.66667V9.33333H2.66667C1.196 9.33333 0 10.5293 0 12V24C0 25.4707 1.196 26.6667 2.66667 26.6667H18.6667C20.1373 26.6667 21.3333 25.4707 21.3333 24V12C21.3333 10.5293 20.1373 9.33333 18.6667 9.33333H17.3333V6.66667C17.3333 2.99067 14.3427 0 10.6667 0ZM6.66667 6.66667C6.66667 4.46133 8.46133 2.66667 10.6667 2.66667C12.872 2.66667 14.6667 4.46133 14.6667 6.66667V9.33333H6.66667V6.66667ZM18.6693 24H12V20.9627C12.7933 20.5 13.3333 19.6493 13.3333 18.6667C13.3333 17.196 12.1373 16 10.6667 16C9.196 16 8 17.196 8 18.6667C8 19.648 8.54 20.5 9.33333 20.9627V24H2.66667V12H18.6667L18.6693 24Z"
-                                    fill="#4D4D51" />
-                            </svg>
-                            <input required
-                                class="w-full px-8 py-3 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                id="password" type="password" />
-                        </div>
-                        <div class="mb-6 text-center">
-                            <button
-                                class="w-full px-4 py-2 font-bold text-[#4D4D51] bg-[#E3CBAF] rounded-full hover:bg-[#B8A38B] hover:text-white focus:outline-none focus:shadow-outline"
-                                type="submit">
-                                Register Account
-                            </button>
-                        </div>
-                        <hr class="mb-6 border-t" />
-                        <div class="text-center">
-                            <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800" href="#">
-                                Forgot Password?
-                            </a>
-                        </div>
-                        <div class="text-center">
-                            <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-                                href="register.html">
-                                Dont have an account? Create one!
-                            </a>
-                        </div>
-                    </form>
+                            <div class="mb-4 relative">
+                                <label class="block mb-2 text-sm font-bold text-gray-700" for="username">
+                                    Username
+                                </label>
+                                <!-- User Icon  -->
+                                <svg width="18" height="18" viewBox="0 0 22 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class=" absolute top-10 left-2">
+                                    <path
+                                        d="M11 0C9.79134 0 8.60982 0.35841 7.60485 1.02991C6.59988 1.70141 5.81661 2.65583 5.35407 3.77249C4.89153 4.88915 4.77051 6.11789 5.00631 7.30333C5.24211 8.48877 5.82414 9.57767 6.67879 10.4323C7.53345 11.287 8.62234 11.869 9.80778 12.1048C10.9932 12.3406 12.222 12.2196 13.3386 11.757C14.4553 11.2945 15.4097 10.5112 16.0812 9.50626C16.7527 8.5013 17.1111 7.31977 17.1111 6.11111C17.1111 4.49034 16.4673 2.93596 15.3212 1.7899C14.1752 0.643847 12.6208 0 11 0ZM11 9.77778C10.2748 9.77778 9.56589 9.56273 8.96291 9.15983C8.35993 8.75693 7.88996 8.18428 7.61244 7.51428C7.33492 6.84429 7.26231 6.10704 7.40379 5.39578C7.54527 4.68452 7.89448 4.03118 8.40727 3.51839C8.92007 3.00559 9.57341 2.65638 10.2847 2.5149C10.9959 2.37342 11.7332 2.44603 12.4032 2.72355C13.0732 3.00107 13.6458 3.47104 14.0487 4.07402C14.4516 4.677 14.6667 5.38591 14.6667 6.11111C14.6667 7.08357 14.2804 8.0162 13.5927 8.70384C12.9051 9.39147 11.9725 9.77778 11 9.77778ZM22 23.2222V22C22 19.7309 21.0986 17.5548 19.4941 15.9503C17.8897 14.3458 15.7135 13.4444 13.4444 13.4444H8.55556C6.28648 13.4444 4.11034 14.3458 2.50586 15.9503C0.901386 17.5548 0 19.7309 0 22V23.2222H2.44444V22C2.44444 20.3792 3.08829 18.8248 4.23435 17.6788C5.3804 16.5327 6.93479 15.8889 8.55556 15.8889H13.4444C15.0652 15.8889 16.6196 16.5327 17.7657 17.6788C18.9117 18.8248 19.5556 20.3792 19.5556 22V23.2222H22Z"
+                                        fill="#4D4D51" />
+                                </svg>
+                                <input required
+                                    class="w-full px-8 py-3 mb-3 text-sm leading-tight text-gray-700 border rounded appearance-none outline-none focus:ring-gray-400 focus:ring-1 duration-300"
+                                    id="username" type="text" />
+                            </div>
+                            <div class="mb-4 relative">
+                                <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                                    Password
+                                </label>
+                                <svg width="20" height="20" viewBox="0 0 22 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class=" absolute top-10 left-2">
+                                    <path
+                                        d="M10.6667 0C6.99067 0 4 2.99067 4 6.66667V9.33333H2.66667C1.196 9.33333 0 10.5293 0 12V24C0 25.4707 1.196 26.6667 2.66667 26.6667H18.6667C20.1373 26.6667 21.3333 25.4707 21.3333 24V12C21.3333 10.5293 20.1373 9.33333 18.6667 9.33333H17.3333V6.66667C17.3333 2.99067 14.3427 0 10.6667 0ZM6.66667 6.66667C6.66667 4.46133 8.46133 2.66667 10.6667 2.66667C12.872 2.66667 14.6667 4.46133 14.6667 6.66667V9.33333H6.66667V6.66667ZM18.6693 24H12V20.9627C12.7933 20.5 13.3333 19.6493 13.3333 18.6667C13.3333 17.196 12.1373 16 10.6667 16C9.196 16 8 17.196 8 18.6667C8 19.648 8.54 20.5 9.33333 20.9627V24H2.66667V12H18.6667L18.6693 24Z"
+                                        fill="#4D4D51" />
+                                </svg>
+                                <input required
+                                    class="w-full px-8 py-3 mb-3 text-sm leading-tight text-gray-700 border rounded appearance-none outline-none focus:ring-gray-400 focus:ring-1 duration-300"
+                                    id="password" type="password" />
+                            </div>
+                            <div class="mb-6 text-center">
+                                <button
+                                    class="w-full px-4 py-2 font-bold text-[#4D4D51] bg-[#E3CBAF] rounded-full duration-200 hover:bg-[#B8A38B] hover:text-white focus:outline-none focus:shadow-outline hover:shadow-md"
+                                    type="submit">
+                                    Register Account
+                                </button>
+                            </div>
+                            <hr class="mb-6 border-t" />
+                            <div class="text-center">
+                                <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                                    href="#">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                                    href="register.html">
+                                    Dont have an account? Create one!
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>
