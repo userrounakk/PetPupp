@@ -8,7 +8,7 @@
     "build": "postcss ./src/styles.css -o ./public/styles.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rounak Agrawal",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.7",
